@@ -61,10 +61,5 @@ def lawofaverages_ ( round_ct=1, toss_ct=1):
 
         
 
-def test ():
+if __name__ == '__main__':
     lawofaverages(100, 10000)
-
-
-
-def test_ ():
-    return lawofaverages_(100, 10000)
