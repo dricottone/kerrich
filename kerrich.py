@@ -1,8 +1,12 @@
+#!/usr/bin/env python3
+
 from random import randrange
 
-def cointoss (toss_ct=1):
-    """ Tosses toss_ct number of fair coins.
-        Returns number of tails and heads in a tuple. """
+def cointoss(toss_ct=1):
+    """
+    Tosses toss_ct number of fair coins. Returns number of tails and heads in
+    a tuple.
+    """
     tails = 0
     heads = 0
     for i in range(toss_ct):
@@ -15,9 +19,11 @@ def cointoss (toss_ct=1):
 
 
 
-def lawofaverages ( round_ct=1, toss_ct=1):
-    """ In round_ct number of rounds, tosses toss_ct number of coins.
-        Reports cumulative results in rows. """
+def lawofaverages(round_ct=1, toss_ct=1):
+    """
+    In round_ct number of rounds, tosses toss_ct number of coins. Reports
+    cumulative results in rows.
+    """
     tot_tails = 0
     tot_heads = 0
     col_len = len(str(round_ct * toss_ct)) + 2
@@ -43,7 +49,9 @@ def lawofaverages ( round_ct=1, toss_ct=1):
 
 
 def lawofaverages_ ( round_ct=1, toss_ct=1):
-    """ Silent version, returns results in tuple of tuples, """
+    """
+    Silent version, returns results in tuple of tuples.
+    """
     tot_tails = 0
     tot_heads = 0
     results = []
@@ -63,3 +71,4 @@ def lawofaverages_ ( round_ct=1, toss_ct=1):
 
 if __name__ == '__main__':
     lawofaverages(100, 10000)
+
